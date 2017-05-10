@@ -1,0 +1,295 @@
+html{
+	height:100%;
+}
+
+body{
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	color: #777777;
+	padding: 0px;
+	background-image: url("../images/grey_wash_wall.png");
+	margin:0 0 0 0;
+	height:200px;
+	position:relative;
+	top:0;
+	overflow: auto;
+	height:100%;
+}
+
+h1, h2, h3{
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+h1{
+	font-size:40px;
+	margin:30px 0 30px 0;
+	font-weight:bold;
+}
+h2{
+	font-size:25px;
+	margin:20px 0 20px 0;
+	font-weight:bold;
+}
+
+p{
+	line-height: 150%;
+}
+
+.teal{
+	color: #4aaaa5;
+}
+
+.contain{
+	clear:both;
+	min-height: calc(100vh - 113px);
+	width:100%;
+	overflow: auto;
+	background-image: url("../images/grey_wash_wall.png");
+	
+	position:relative;
+	top:0;
+}
+
+header{
+	background-color: #ffffff;
+	border-color: #cccccc;
+	height:100px;
+	width: 100%;
+	margin-left:0px;
+	padding-left:30px; 
+	
+	position:fixed;
+	z-index: 1;
+}
+
+.nameTag{
+	float:left;
+	background-color: #4aaaa5;
+	text-align: center;
+	padding-left: 30px;
+	padding-right: 30px;
+	height:100px;
+	color:white;
+	z-index: 2;
+}
+
+.main{
+	background-color: #ffffff;
+	border: 1px #dddddd solid;
+	float: left;
+	/*position:relative;
+	display:inline-block;*/
+	margin:150px 0px 100px 100px;
+	padding:30px;
+	padding-top: 0px;
+	width:590px;
+}
+
+a{
+	display: inline-block;
+
+}
+
+aside{
+	background-color:#ffffff;
+	border: 3px #dddddd solid;
+	float:left;
+	/*position:relative;*/
+	/*display:inline-block;*/
+	margin:150px 0px 0px 40px;
+	text-align:center;
+	padding:20px;
+	padding-top: 0px;
+	width: 250px;
+}
+
+.iconPic{
+	width:70px;
+	margin:0px;
+}
+.iconPic:hover{
+	/*border:2px yellow solid;*/
+	background-color: lightpink;
+}
+
+.proPic{
+	width: 200px;
+	float:left;
+	margin:0px 20px 10px 0px;
+}
+
+.portPic{
+	width: 275px;
+	height: 200px;
+	display:inline-block;
+	position:relative;
+
+	
+}
+.portDiv{
+	background-color: red;
+	width: 275px;
+	height:200px;
+	position:relative;
+	margin-top:20px;
+	margin-bottom:20px;
+	display:inline-block;
+}
+
+.portDivCol1{
+	margin-right: 30px;
+}
+
+.portLabel{
+	position:absolute;
+	background-color:#4aaaa5;
+	color:white;
+	top:125px;
+	width: 275px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+}
+.portLabel:hover{
+	font-style:italic;
+}
+
+label{
+	display:block;
+	margin-top:30px;
+	font-size: 18px;
+}
+
+form{
+	padding-left:30px;
+	padding-right:30px;
+	color:black;
+}
+	
+input[type=text],  textarea  {
+  font-size: 18px;
+  line-height: 18px;
+  width:530px;
+  color:grey;
+}
+
+textarea {
+ 	height:200px;
+}
+
+input[type=button] {
+    background-color: #4aaaa5; 
+    border: none;
+    color: white;
+    padding: 10px 30px;
+    text-align: center;
+    margin-top:30px;
+    display: inline-block;
+    font-size: 18px;
+}
+input[type=button]:hover {
+	font-style:italic;
+}
+
+.nameTagH1{
+	margin:0px;
+	margin-top: 30px;
+	background-color: #4aaaa5;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.navLink{
+	text-decoration: none;
+	color: #4aaaa5;
+	font-size: 18px;
+	display:block;
+	padding-top:20px;
+	padding-bottom:30px;
+	width:90px;
+}
+.navLink:hover{
+	font-weight: bold;
+}
+
+nav{
+	position:relative;
+	left:750px;
+	top:30px;
+	height:50px;
+	width:300px;
+}
+
+.navDiv{
+	text-decoration: none;
+	width:90px;
+	padding-right: 10px;
+	padding-left: 10px;
+	
+	text-align: center;
+	border-right: 1px #cccccc solid;
+	border-left: 1px #cccccc solid;
+	border-top: 1px #cccccc solid;
+	position:absolute;
+	background-color: #eeeeee;	
+	border-top-left-radius:40px; 
+	border-top-right-radius:40px;
+}
+
+.navDiv1{
+	left:0px;
+	z-index:2;
+	
+}
+
+.navDiv2{
+	left:90px;
+	z-index:2;
+	
+}
+
+.navDivIsNext{
+	background-color:#dddddd;
+	z-index:3;
+}
+
+.navDiv3{
+	left:180px;
+}
+
+.navDivIsSelect{
+	background-image: url("../images/grey_wash_wall.png");
+	color: #4aaaa5;
+	z-index: 4;
+	padding-bottom: 2px;
+}
+
+footer{
+	clear: both;
+	background-color: #4d4d4d;
+	color: #efefee;
+	
+	text-align: center;
+	width: 100%;
+	border-top: 10px #4aaaa5 solid;
+	padding-top:40px;
+	padding-bottom:45px;
+}
+
+@media screen and (max-width: 1000px) {
+	
+	aside{
+		margin: 0px 0px 100px 50px;
+	}
+	
+	nav{
+		position:relative;
+		left:410px;
+		
+	}
+	.main{
+		margin-left:50px;
+		margin-bottom: 40px;
+	}
+	header{
+		padding-left:0px;
+	}
+
