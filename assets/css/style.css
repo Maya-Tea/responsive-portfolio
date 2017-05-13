@@ -7,6 +7,7 @@ body{
 	color: #777777;
 	padding: 0px;
 	background-image: url("../images/grey_wash_wall.png");
+	
 	margin:0 0 0 0;
 	height:200px;
 	position:relative;
@@ -19,12 +20,12 @@ h1, h2, h3{
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
 h1{
-	font-size:40px;
+	font-size:35px;
 	margin:30px 0 30px 0;
 	font-weight:bold;
 }
 h2{
-	font-size:25px;
+	font-size:22px;
 	margin:20px 0 20px 0;
 	font-weight:bold;
 }
@@ -54,7 +55,7 @@ header{
 	height:100px;
 	width: 100%;
 	margin-left:0px;
-	padding-left:30px; 
+	padding-left:0px; 
 	
 	position:fixed;
 	z-index: 1;
@@ -64,12 +65,17 @@ header{
 	float:left;
 	background-color: #4aaaa5;
 	text-align: center;
-	padding-left: 30px;
-	padding-right: 30px;
+	padding:0px 30px 0px 30px;
 	height:100px;
+	margin-left:100px;
 	color:white;
-	z-index: 2;
 }
+/*.nameTagH1{
+	margin:0px;
+	margin-top: 30px;
+	/*background-color: #4aaaa5;*/
+	
+
 
 .main{
 	background-color: #ffffff;
@@ -80,7 +86,7 @@ header{
 	margin:150px 0px 100px 100px;
 	padding:30px;
 	padding-top: 0px;
-	width:590px;
+	width:500px;
 }
 
 a{
@@ -98,11 +104,11 @@ aside{
 	text-align:center;
 	padding:20px;
 	padding-top: 0px;
-	width: 250px;
+	width: 210px;
 }
 
 .iconPic{
-	width:70px;
+	width:65px;
 	margin:0px;
 }
 .iconPic:hover{
@@ -111,14 +117,11 @@ aside{
 }
 
 .proPic{
-	width: 200px;
 	float:left;
 	margin:0px 20px 10px 0px;
 }
 
 .portPic{
-	width: 275px;
-	height: 200px;
 	display:inline-block;
 	position:relative;
 
@@ -126,24 +129,27 @@ aside{
 }
 .portDiv{
 	background-color: red;
-	width: 275px;
-	height:200px;
 	position:relative;
 	margin-top:20px;
 	margin-bottom:20px;
 	display:inline-block;
 }
+.proPic, .portPic, .portDiv, .portLabel{
+	width:235px;
+}
+.portPic, .portDiv{
+	height:180px;
+}
 
 .portDivCol1{
-	margin-right: 30px;
+	margin-right: 25px;
 }
 
 .portLabel{
 	position:absolute;
 	background-color:#4aaaa5;
 	color:white;
-	top:125px;
-	width: 275px;
+	top:100px;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	text-align: center;
@@ -167,7 +173,7 @@ form{
 input[type=text],  textarea  {
   font-size: 18px;
   line-height: 18px;
-  width:530px;
+  width:100%;
   color:grey;
 }
 
@@ -189,13 +195,7 @@ input[type=button]:hover {
 	font-style:italic;
 }
 
-.nameTagH1{
-	margin:0px;
-	margin-top: 30px;
-	background-color: #4aaaa5;
-	padding-left: 30px;
-	padding-right: 30px;
-}
+
 
 .navLink{
 	text-decoration: none;
@@ -212,7 +212,7 @@ input[type=button]:hover {
 
 nav{
 	position:relative;
-	left:750px;
+	left:680px;
 	top:30px;
 	height:50px;
 	width:300px;
@@ -274,22 +274,256 @@ footer{
 	padding-bottom:45px;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 980px) {
 	
-	aside{
-		margin: 0px 0px 100px 50px;
+	.portDivCol1{
+		margin:0;
 	}
 	
 	nav{
-		position:relative;
-		left:410px;
+		
+		left:468px;
 		
 	}
 	.main{
-		margin-left:50px;
+		width:280px;
+	}
+	form{
+		padding:0;
+	}
+	.proPic, .portPic, .portDiv, .portLabel{
+		width:280px;
+	}
+	.portPic, .portDiv{
+		height:200px;
+	}
+	.portLabel{
+		top:120px;
+	}
+	
+}
+@media screen and (max-width: 768px) {
+	
+	aside{
+		margin: 0px 0px 100px 20px;
+		width:560px;
+	}
+
+	nav{
+		position:relative;
+		left:340px;
+		
+	}
+	.main{
+		margin-left:20px;
+		margin-right:20px;
 		margin-bottom: 40px;
+		width:540px;
+	}
+	.nameTag{
+		margin-left:20px;
+
+	}
+	form{
+		padding-left:30px;
+		padding-right:30px;
+	}
+	.proPic, .portPic, .portDiv, .portLabel{
+		width:252px;
+	}
+	.portDivCol1{
+		margin-right:30px;
+	}
+	.portPic, .portDiv{
+		height:190px;
+	}
+	.portLabel{
+		top:110px;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	.proPic, .portPic, .portDiv, .portLabel{
+		width:300px;
+	}
+	.portPic, .portDiv{
+		height:220px;
+	}
+	.portLabel{
+		top:130px;
+	}
+	header{
+		position: static;
+
+	}
+	aside{
+		float: none;
+		margin:0 auto;
+		margin-bottom: 100px;
+		width:300px;
+
+	}
+	.nameTag{
+		width:100%;
+		margin:0;
+		padding:0 0 0 0;
+		height:70px;
+	}
+
+
+	nav{
+		
+		left:0px;
+		
+		top:60px;
+		margin: 0 auto;
+		height:40.6px;
+		width:310px;
+		background-color: #4aaaa5
+	}
+	.navDiv1{
+		left:0px;
+	}
+
+	.navDiv2{
+		left:100px;
+	}
+	.navDiv3{
+		left:200px;
+	}
+
+	.navDivIsNext{
+		background-color:#dddddd;
+		z-index:3;
+	}
+
+	form{padding:0;}
+
+	.main{
+		margin:0 auto;
+		margin-bottom: 40px;
+		margin-top:50px;
+		width:300px;
+		float:none;
 	}
 	header{
 		padding-left:0px;
+		background-color: #4aaaa5;
 	}
+	.navLink{
+		padding-top:15px;
+		padding-bottom:5px;
+	}
+	.navLink:hover{
+		padding-top:20px;
+	}
+	.navDiv:hover{
+		top:-5px;
+	}
+	h1{
+		padding:20px 0 20px 0;
+		margin:0px;
+		font-size: 30px;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.proPic, .portPic, .portDiv, .portLabel{
+		width:200px;
+	}
+	.portPic, .portDiv{
+		height:140px;
+	}
+	.portLabel{
+		top:70px;
+	}
+	
+	aside{
+		float: none;
+		margin:0 auto;
+		margin-bottom: 100px;
+		width:210px;
+		padding-left: 10px;
+		padding-right: 10px;
+
+	}
+	.nameTag{
+		
+		height:40px;
+	}
+
+	nav{
+		top:60px;
+		height:45.6px;
+		width:100%;
+	}
+	.navDiv{
+		width:200px;
+		border-bottom: 1px #cccccc solid;
+		position:absolute;
+		background-color: #eeeeee;	
+		border-bottom-right-radius:40px; 
+		border-top-right-radius:40px;
+		border-top-left-radius:0px;
+	}
+	.navLink:hover{
+		padding-top:5px;
+	}
+	
+	
+	h1{
+		padding-top: 10px;
+		padding-bottom: 5px;
+	}
+	.navDiv1{
+		left:0px;
+	}
+
+	.navDiv2{
+		top:28px;
+		left:0px;
+	}
+	.navDiv3{
+		top:56px;
+		left:0px;
+		z-index:2;
+	}
+	.navDiv1:hover{
+		top:0px;
+		width:210px;
+	}
+	.navDiv2:hover{
+		top:28px;
+		width:210px;
+	}
+	.navDiv3:hover{
+		top:56px;
+		width:210px;
+	}
+	.navDivIsNext{
+		background-color:#dddddd;
+		z-index:3;
+	}
+
+	.main{
+		
+		margin-bottom: 40px;
+		margin-top:80px;
+		width:210px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-bottom:10px;
+	}
+	
+	.navLink{
+		padding-top:5px;
+		padding-bottom:5px;
+		padding-left: 20px;
+		width: 100%;
+		text-align: left;
+	}
+	
+}
+
+
 
